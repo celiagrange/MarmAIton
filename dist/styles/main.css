@@ -1,7 +1,48 @@
 :root {
   font-size: 62.5%;
+  font-family: "poppins";
 }
 
 body {
-  color: red;
+  margin: 0;
+  font-size: 1.6rem;
+  background-color: #FFFFFF;
+}
+
+/*** HEADER ***/
+.header {
+  margin: 0 auto;
+}
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  height: 54px;
+  margin: 24px 48px;
+}
+.header__content__menu {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+  color: #CC0829;
+  gap: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header__content .iconSearch {
+  width: 28.368px;
+  margin-right: 24px;
+}
+.header__content .buttonHeader {
+  margin-left: 24px;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background-color: #CC0829;
+  color: #FFEDE5;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,60 @@
+$mainColor: #CC0829;
+$secondaryColor: #37420D;
+$tertiaryColorGreen: #A1C225;
+$tertiaryColorPink: #FFEDE5;
+$neutralWhite: #FFFFFF;
+$neutralGray: #C2C2C2;
+$neutralDarkGray: #333333;
+
 :root {
     font-size: 62.5%;
+    font-family: 'poppins';
 }
 body {
-    color: red;
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: $neutralWhite;
+}
+
+/*** HEADER ***/
+
+.header{
+    margin: 0 auto;
+    
+    &__content{
+        display: flex;
+        justify-content: space-around;
+        height: 54px;
+        margin: 24px 48px;
+
+        &__menu{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            width: 300px;
+            color: $mainColor;
+            gap: 24px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .iconSearch{
+            width: 28.368px;
+            margin-right: 24px;
+        }
+
+        .buttonHeader{
+            margin-left: 24px;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 28px;
+            background-color: $mainColor;
+            color: $tertiaryColorPink;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+        }
+    }
 }
