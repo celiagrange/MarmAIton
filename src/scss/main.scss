@@ -23,6 +23,9 @@ body {
     
     &__content{
         display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
         justify-content: space-around;
         height: 54px;
         margin: 24px 48px;
@@ -30,9 +33,10 @@ body {
         &__menu{
             display: flex;
             align-items: center;
+            justify-content: center;
             margin: 0 auto;
             width: 300px;
-            color: $mainColor;
+            color: $neutralDarkGray;
             gap: 24px;
             font-size: 20px;
             font-weight: 500;
@@ -55,6 +59,172 @@ body {
             font-size: 20px;
             font-weight: 500;
             border: none;
+        }
+    }
+}
+
+/*** HERO ***/
+
+.hero{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: $neutralWhite;
+    box-shadow: 0px 4px 4px 0px rgba(194, 194, 194, 0.20) inset;
+
+    &__content{
+        width: 936px;
+        margin-left: 48px;
+
+        h1{
+            font-size: 80px;
+            font-weight: 900;
+            color: $mainColor;
+        }
+
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            color: $neutralDarkGray;
+            margin-top: 48px;
+            margin-bottom: 24px;
+        }
+
+        .buttonHero{
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 28px;
+            background-color: $mainColor;
+            color: $tertiaryColorPink;
+            font-size: 24px;
+            font-weight: 500;
+            border: none;
+        }
+    }
+
+    &__img{
+        margin-top: 178px;
+        margin-right: 48px;
+        width: 456px;
+    }
+}
+
+/*** MAIN ***/
+
+/*** section 1 ***/
+
+.section1{
+    margin: 0 auto;
+    justify-content: center;
+
+    &__content{
+        font-size: 64px;
+        font-weight: 800;
+        color: $mainColor;
+        text-align: center;
+        margin: 100px 48px;
+
+        &__step{
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin: 100px 48px;
+            font-size: 36px;
+            font-weight: 500;
+            color: $neutralDarkGray;
+
+            div{
+                padding-left: 48px;
+                padding-right: 48px;
+                width: 456px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 300;
+                margin-top: 48px;
+            }
+        }
+
+        .buttonSection1{
+            display: flex;
+            margin: 0 auto;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 28px;
+            background-color: $mainColor;
+            color: $tertiaryColorPink;
+            font-size: 24px;
+            font-weight: 500;
+            border: none;
+        }
+
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 48px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+/*** section 2 ***/
+
+.section2{
+    margin: 0 auto;
+    justify-content: center;
+    background-color: $tertiaryColorPink;
+    height: 1364px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    &__content{
+        font-size: 48px;
+        font-weight: 700;
+        color: $secondaryColor;
+        text-align: center;
+        margin: 0px 48px 200px 48px;
+        
+
+        &__cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 39px;
+            font-size: 24px;
+            font-weight: 400;
+            color: $neutralDarkGray;
+            text-align: center;
+
+            div{
+                width: 201px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__button{
+                display: flex;
+                margin: 0 auto;
+                gap: 12px;
+
+                button{
+                    padding: 4px 12px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 24px;
+                    border: 1px solid $secondaryColor;
+                    background-color: transparent;
+                    font-size: 20px;
+                    font-weight: 500;
+            
+                }
+            }
         }
     }
 }
