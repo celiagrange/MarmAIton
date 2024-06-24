@@ -1,0 +1,112 @@
+/*** FOOTER ***/
+
+.footerSocial{
+    margin: 0 auto;
+    justify-content: center;
+    background-color: $tertiaryColorPink;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    &__content{
+        font-size: 48px;
+        font-weight: 700;
+        color: $mainColor;
+        text-align:left;
+        margin: 0px 48px;
+
+        &__cards{
+            margin-top: 48px;
+            display: flex;
+            gap: 24px;
+
+            img{
+                width: 336px;
+            }
+
+            a{
+                font-size: 24px;
+                font-weight: 500;
+                color: $mainColor;
+                text-align: center;
+                margin-left: 110px;
+                display: flex;
+                align-items: end;
+            }
+        }
+    }
+}
+
+.footer{
+    margin: 0 auto;
+    justify-content: center;
+    background-color: $mainColor;
+    padding-bottom: 48px;
+    padding-top: 100px;
+
+    &__content{
+        font-size: 24px;
+        font-weight: 500;
+        color: $tertiaryColorPink;
+        text-align:left;
+        margin-left:  168px;
+        margin-right: 132px;
+        display: flex;
+
+        &__left{
+            gap: 24px;
+
+            .app{
+                gap: 12px;
+                margin-top: 12px;
+            }
+
+            .social{
+                margin-top: 24px;
+            }
+        }
+
+        &__center{
+            gap: 12px;
+            margin-left: 134px;
+
+            a{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 20px;
+                font-weight: 400;
+                color: $tertiaryColorPink;
+                text-decoration: none;
+            }
+        }
+
+        &__right{
+            gap: 12px;
+            margin-left: 110px;
+
+            a{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 20px;
+                font-weight: 400;
+                color: $tertiaryColorPink;
+                text-decoration: none;
+            }
+        } 
+    }
+
+    &__copyright{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        color: $tertiaryColorPink;
+        font-size: 18px;
+        font-weight: 700;
+        gap: 8px;
+
+        img{
+            width: 60px;
+        }
+    }
+}

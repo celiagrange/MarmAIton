@@ -1,0 +1,46 @@
+/*** HEADER ***/
+
+.header{
+    margin: 0 auto;
+    
+    &__content{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        height: 54px;
+        margin: 24px 48px;
+
+        &__menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 300px;
+            color: $neutralDarkGray;
+            gap: 24px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .iconSearch{
+            width: 28.368px;
+            margin-right: 24px;
+        }
+
+        .buttonHeader{
+            margin-left: 24px;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 28px;
+            background-color: $mainColor;
+            color: $tertiaryColorPink;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+/*** SECTION ***/
+
+.section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: $tertiaryColorPink;
+    box-shadow: 0px 4px 4px 0px rgba(194, 194, 194, 0.20) inset;
+    height: 880px;
+
+    &__chat{
+        
+        &__text{
+            margin-left: 64px;
+            margin-top: 48px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+    
+            img{
+                width: 48px;
+            }
+    
+            &__guide{
+                background-color: $neutralWhite;
+                padding: 12px 48px;
+                border-radius: 48px 48px 48px 8px;
+                font-size: 24px;
+                font-weight: 500;
+                color: $mainColor;
+                width: 288px;
+                height: 72px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    
+        &__button{
+            display: flex;
+            align-items: flex-end;
+            width: 1056px;
+            justify-content: space-between;
+            margin: 621px 24px 48px 48px;
+
+            .back{
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 28px;
+                border: 1px solid $mainColor;
+                background-color: transparent;
+                color: $mainColor;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .go{
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 28px;
+                border: none;
+                background-color: $tertiaryColorGreen;
+                color: $neutralWhite;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__recipe{
+        margin: 48px 48px 0px 0px;
+        background-color: $neutralWhite;
+        padding-left: 24px;
+        padding-top: 24px;
+        border-radius: 48px;
+        width: 336px;
+        height: 784px;
+        font-size: 16px;
+        font-weight: 300;
+        gap: 12px;
+
+        h5{
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .time{
+            display: flex;
+            gap: 8px;
+            height: 24px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        &__step{
+            display: flex;
+            height: 148px;
+            margin-bottom: 12px;
+
+            &__text{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 12px;
+                gap: 0px;
+            }
+        }
+    }
+}

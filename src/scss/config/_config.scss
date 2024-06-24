@@ -1,0 +1,17 @@
+$mainColor: #CC0829;
+$secondaryColor: #37420D;
+$tertiaryColorGreen: #A1C225;
+$tertiaryColorPink: #FFEDE5;
+$neutralWhite: #FFFFFF;
+$neutralGray: #C2C2C2;
+$neutralDarkGray: #333333;
+
+:root {
+    font-size: 62.5%;
+    font-family: 'poppins';
+}
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: $neutralWhite;
+}
