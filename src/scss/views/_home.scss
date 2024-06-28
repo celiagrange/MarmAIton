@@ -3,27 +3,29 @@
 .hero{
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    background-color: $neutralWhite;
-    box-shadow: 0px 4px 4px 0px rgba(194, 194, 194, 0.20) inset;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 1464px;
 
     &__content{
         width: 936px;
         margin-left: 48px;
+        margin-right: 48px;
 
         h1{
-            font-size: 80px;
+            font-size: 64px;
             font-weight: 900;
             color: $mainColor;
+            width: 696px;
         }
 
         p{
             font-size: 24px;
             font-weight: 400;
-            color: $neutralDarkGray;
+            color: $secondaryColor;
             margin-top: 48px;
-            margin-bottom: 24px;
+            margin-bottom: 48px;
+            width: 456px;
         }
 
         .buttonHero{
@@ -41,9 +43,8 @@
     }
 
     &__img{
-        margin-top: 178px;
-        margin-right: 48px;
-        width: 456px;
+        width: 620px;
+        margin-top: -200px;
     }
 }
 
@@ -51,14 +52,14 @@
 
 /*** SECTION 1 ***/
 
-.section1{
+.how{
     margin: 0 auto;
     justify-content: center;
 
     &__content{
-        font-size: 64px;
+        font-size: 56px;
         font-weight: 800;
-        color: $mainColor;
+        color: $secondaryColor;
         text-align: center;
         margin: 100px 48px;
 
@@ -71,7 +72,7 @@
             margin: 100px 48px;
             font-size: 36px;
             font-weight: 500;
-            color: $neutralDarkGray;
+            color: $secondaryColor;
 
             div{
                 padding-left: 48px;
@@ -83,10 +84,18 @@
                 font-size: 20px;
                 font-weight: 300;
                 margin-top: 48px;
+                color: $neutralDarkGray;
             }
         }
 
-        .buttonSection1{
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 100px;
+            margin-bottom: 24px;
+        }
+
+        .buttonHow{
             display: flex;
             margin: 0 auto;
             padding: 12px 24px;
@@ -99,43 +108,34 @@
             font-weight: 500;
             border: none;
         }
-
-        p{
-            font-size: 24px;
-            font-weight: 400;
-            margin-top: 48px;
-            margin-bottom: 100px;
-        }
     }
 }
 
 /*** SECTION 2 ***/
 
-.section2{
+.recipes{
     margin: 0 auto;
-    justify-content: center;
     background-color: $tertiaryColorPink;
     padding-bottom: 100px;
     padding-top: 100px;
 
+
     &__content{
         font-size: 48px;
         font-weight: 700;
+        line-height: 48px;
         color: $secondaryColor;
         text-align: center;
-        margin: 0px 48px;
         
         #titre{
-            margin-top: 200px;
+            margin-top: 100px;
         }
 
         a{
             font-size: 24px;
             font-weight: 500;
             color: $secondaryColor;
-            text-align: left;
-            margin-top: 48px;
-            display: flex;
+            text-align: center;
         }
         
 
@@ -148,6 +148,12 @@
             font-weight: 400;
             color: $neutralDarkGray;
             text-align: center;
+            margin-bottom: 48px;
+            margin-top: 48px;
+
+            p{
+                height: 72px;
+            }
 
             div{
                 width: 201px;
@@ -170,7 +176,6 @@
                     color: $secondaryColor;
                     font-size: 20px;
                     font-weight: 500;
-            
                 }
             }
         }
@@ -179,21 +184,25 @@
 
 /*** SECTION 3 ***/
 
-.section3{
+.tips{
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-around;
+    display: flex;
     
     &__content{
         font-size: 48px;
         font-weight: 700;
+        line-height: 48px;
         color: $secondaryColor;
-        text-align:left;
+        text-align: center;
         margin: 100px 48px;
+        width: 1416px;
 
         &__cards{
             margin-top: 48px;
             display: flex;
-            gap: 24px;
+            text-align: left;
+            gap: 0px 24px;
             width: 456px;
 
             .carte{

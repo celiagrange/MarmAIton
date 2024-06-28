@@ -14,7 +14,7 @@
         <header>
             <section class="header">
                 <div class="header__content">
-                    <img src="../dist/images/logo.svg" alt="logo site">
+                    <a href="../index.html"><img src="../dist/images/logo.svg" alt="logo site"></a>
                     <div class="header__content__menu">
                         <p>Cuisiner</p>
                         <p>Planifier</p>
@@ -28,26 +28,58 @@
 <!-- FIN HEADER -->
         <main>
 <!-- SECTION -->
-            <section class="section">
-                <div class="section__chat">
-                    <div class="section__chat__text">
+            <section class="recipe">
+                <div class="recipe__chat">
+                    <div class="recipe__chat__content">
                         <img src="../dist/images/logoSymbole.svg" alt="image logo symbole">
-                        <div class="section__chat__text__guide">
-                            <p>Êtes-vous prêt à débuter la recette ?</p>
+                        <div class="recipe__chat__content__text">
+                            <div class="recipe__chat__content__text__guide">
+                                <p>Êtes-vous prêt à débuter la recette ?</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__user">
+                                <p>Prêt !</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__guide">
+                                <p>Mettre la farine dans une terrine et former un puits.</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__user">
+                                <p>Étape suivante</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__guide">
+                                <p>Y déposer les oeufs entiers, le sucre, l'huile et le beurre.</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__user">
+                                <p>Étape suivante</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__guide">
+                                <p>Mélanger délicatement avec un fouet en ajoutant au fur et à mesure le lait. La pâte ainsi obtenue doit avoir une consistance d'un liquide légèrement épais.</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__user">
+                                <p>Étape suivante</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__guide">
+                                <p>Parfumer de rhum.</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__user">
+                                <p>Étape suivante</p>
+                            </div>
+                            <div class="hide recipe__chat__content__text__guide">
+                                <p>Faire chauffer une poêle antiadhésive et la huiler très légèrement à l'aide d'un papier Essuie-tout. Y verser une louche de pâte, la répartir dans la poêle puis attendre qu'elle soit cuite d'un côté avant de la retourner. Cuire ainsi toutes les crêpes à feu doux.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="section__chat__button">
-                        <button class="back">Retour</button>
-                        <button class="go">Prêt !</button>
+                    <div class="recipe__chat__button">
+                        <button id="backButton" class="back">Retour</button>
+                        <button id="startButton" class="go">Prêt !</button>
                     </div>
                 </div>
-                <div class="section__recipe">
-                    <h5>Pâte à crêpes</h5>
+                <div class="recipe__summary">
+                    <p class="titre">Pâte à crêpes</p>
                     <div class="time">
                         <img src="../dist/images/iconTime.svg" alt="icon de temps">
                         <p>10min</p>
                     </div>
-                    <h5>Ingrédients</h5>
+                    <p class="titre">Ingrédients</p>
                     <ul>
                         <li>5cl de rhum</li>
                         <li>50g de beurre fondu</li>
@@ -57,7 +89,7 @@
                         <li>3 œufs entiers</li>
                         <li>60cl de lait</li>
                     </ul>
-                    <h5>Équipements</h5>
+                    <p class="titre">Équipements</p>
                     <ul>
                         <li>1 louche</li>
                         <li>1 fouet</li>
@@ -66,22 +98,44 @@
                         <li>1 saladier</li>
                         <li>1 balance</li>
                     </ul>
-                    <div class="section__recipe__step">
+                    <div class="recipe__summary__step">
                         <img src="../dist/images/step1.webp" alt="image étape 1">
-                        <div class="planning__recipe__step__text">
-                            <h5>Étape 1</h5>
+                        <div class="recipe__summary__step__text">
+                            <p class="titre">Étape 1</p>
                             <p>Mettre la farine dans une terrine et former un puits.</p>
                         </div>
                     </div>
-                    <div class="section__recipe__step">
+                    <div class="recipe__summary__step">
                         <img src="../dist/images/step2.webp" alt="image étape 2">
-                        <div class="section__recipe__step__text">
-                            <h5>Étape 2</h5>
+                        <div class="recipe__summary__step__text">
+                            <p class="titre">Étape 2</p>
                             <p>Y déposer les œufs entiers, le sucre, l’huile et le beurre.</p>
+                        </div>
+                    </div>
+                    <div class="recipe__summary__step">
+                        <img src="../dist/images/step3.webp" alt="image étape 3">
+                        <div class="recipe__summary__step__text">
+                            <p class="titre">Étape 3</p>
+                            <p>Mélanger délicatement avec un fouet en ajoutant au fur et à mesure le lait. La pâte ainsi obtenue doit avoir une consistance d'un liquide légèrement épais.</p>
+                        </div>
+                    </div>
+                    <div class="recipe__summary__step">
+                        <img src="../dist/images/step4.webp" alt="image étape 4">
+                        <div class="recipe__summary__step__text">
+                            <p class="titre">Étape 4</p>
+                            <p>Parfumer de rhum.</p>
+                        </div>
+                    </div>
+                    <div class="recipe__summary__step">
+                        <img src="../dist/images/step5.webp" alt="image étape 5">
+                        <div class="recipe__summary__step__text">
+                            <p class="titre">Étape 5</p>
+                            <p>Faire chauffer une poêle antiadhésive et la huiler très légèrement à l'aide d'un papier Essuie-tout. Y verser une louche de pâte, la répartir dans la poêle puis attendre qu'elle soit cuite d'un côté avant de la retourner. Cuire ainsi toutes les crêpes à feu doux.</p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        <script src="../dist/scripts/main.js"></script>
     </body>
 </html>

@@ -12,6 +12,11 @@ body {
 /*** HEADER ***/
 .header {
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 4px 0px rgba(194, 194, 194, 0.2);
+  padding: 24px 0px;
 }
 .header__content {
   display: flex;
@@ -20,7 +25,7 @@ body {
   justify-content: center;
   justify-content: space-around;
   height: 54px;
-  margin: 24px 48px;
+  margin: 0px 48px;
 }
 .header__content__menu {
   display: flex;
@@ -44,37 +49,39 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 28px;
-  background-color: #CC0829;
-  color: #FFEDE5;
+  border: 1px solid #CC0829;
+  background-color: transparent;
+  color: #CC0829;
   font-size: 20px;
   font-weight: 500;
-  border: none;
 }
 
 /*** HERO ***/
 .hero {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 4px 0px rgba(194, 194, 194, 0.2) inset;
+  justify-content: space-around;
+  margin-top: 100px;
+  width: 1464px;
 }
 .hero__content {
   width: 936px;
   margin-left: 48px;
+  margin-right: 48px;
 }
 .hero__content h1 {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 900;
   color: #CC0829;
+  width: 696px;
 }
 .hero__content p {
   font-size: 24px;
   font-weight: 400;
-  color: #333333;
+  color: #37420D;
   margin-top: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
+  width: 456px;
 }
 .hero__content .buttonHero {
   display: flex;
@@ -89,25 +96,24 @@ body {
   border: none;
 }
 .hero__img {
-  margin-top: 178px;
-  margin-right: 48px;
-  width: 456px;
+  width: 620px;
+  margin-top: -200px;
 }
 
 /*** MAIN ***/
 /*** SECTION 1 ***/
-.section1 {
+.how {
   margin: 0 auto;
   justify-content: center;
 }
-.section1__content {
-  font-size: 64px;
+.how__content {
+  font-size: 56px;
   font-weight: 800;
-  color: #CC0829;
+  color: #37420D;
   text-align: center;
   margin: 100px 48px;
 }
-.section1__content__step {
+.how__content__step {
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -116,19 +122,26 @@ body {
   margin: 100px 48px;
   font-size: 36px;
   font-weight: 500;
-  color: #333333;
+  color: #37420D;
 }
-.section1__content__step div {
+.how__content__step div {
   padding-left: 48px;
   padding-right: 48px;
   width: 456px;
 }
-.section1__content__step p {
+.how__content__step p {
   font-size: 20px;
   font-weight: 300;
   margin-top: 48px;
+  color: #333333;
 }
-.section1__content .buttonSection1 {
+.how__content p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 100px;
+  margin-bottom: 24px;
+}
+.how__content .buttonHow {
   display: flex;
   margin: 0 auto;
   padding: 12px 24px;
@@ -141,40 +154,31 @@ body {
   font-weight: 500;
   border: none;
 }
-.section1__content p {
-  font-size: 24px;
-  font-weight: 400;
-  margin-top: 48px;
-  margin-bottom: 100px;
-}
 
 /*** SECTION 2 ***/
-.section2 {
+.recipes {
   margin: 0 auto;
-  justify-content: center;
   background-color: #FFEDE5;
   padding-bottom: 100px;
   padding-top: 100px;
 }
-.section2__content {
+.recipes__content {
   font-size: 48px;
   font-weight: 700;
+  line-height: 48px;
   color: #37420D;
   text-align: center;
-  margin: 0px 48px;
 }
-.section2__content #titre {
-  margin-top: 200px;
+.recipes__content #titre {
+  margin-top: 100px;
 }
-.section2__content a {
+.recipes__content a {
   font-size: 24px;
   font-weight: 500;
   color: #37420D;
-  text-align: left;
-  margin-top: 48px;
-  display: flex;
+  text-align: center;
 }
-.section2__content__cards {
+.recipes__content__cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,18 +187,23 @@ body {
   font-weight: 400;
   color: #333333;
   text-align: center;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
-.section2__content__cards div {
+.recipes__content__cards p {
+  height: 72px;
+}
+.recipes__content__cards div {
   width: 201px;
   justify-content: center;
   align-items: center;
 }
-.section2__content__cards__button {
+.recipes__content__cards__button {
   display: flex;
   margin: 0 auto;
   gap: 12px;
 }
-.section2__content__cards__button button {
+.recipes__content__cards__button button {
   padding: 4px 12px;
   justify-content: center;
   align-items: center;
@@ -207,42 +216,46 @@ body {
 }
 
 /*** SECTION 3 ***/
-.section3 {
+.tips {
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
+  display: flex;
 }
-.section3__content {
+.tips__content {
   font-size: 48px;
   font-weight: 700;
+  line-height: 48px;
   color: #37420D;
-  text-align: left;
+  text-align: center;
   margin: 100px 48px;
+  width: 1416px;
 }
-.section3__content__cards {
+.tips__content__cards {
   margin-top: 48px;
   display: flex;
-  gap: 24px;
+  text-align: left;
+  gap: 0px 24px;
   width: 456px;
 }
-.section3__content__cards .carte {
+.tips__content__cards .carte {
   border-radius: 24px;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(194, 194, 194, 0.2);
 }
-.section3__content__cards__text {
+.tips__content__cards__text {
   color: #333333;
   font-size: 16px;
   font-weight: 300;
   margin-left: 24px;
   margin-right: 24px;
 }
-.section3__content__cards__text h5 {
+.tips__content__cards__text h5 {
   font-size: 24px;
   font-weight: 400;
   margin-top: 24px;
   margin-bottom: 12px;
 }
-.section3__content__cards__text button {
+.tips__content__cards__text button {
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 12px 24px;
@@ -257,45 +270,80 @@ body {
 }
 
 /*** SECTION ***/
-.section {
+.recipe {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+  justify-content: space-around;
+  padding-bottom: 48px;
   background-color: #FFEDE5;
-  box-shadow: 0px 4px 4px 0px rgba(194, 194, 194, 0.2) inset;
-  height: 880px;
+  height: auto;
 }
-.section__chat__text {
+.recipe__chat {
+  width: 100%;
+  max-width: 1056px;
+  height: 832px;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+}
+.recipe__chat__content {
   margin-left: 64px;
   margin-top: 48px;
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  width: 1041px;
+  flex: 1;
+  overflow-y: auto;
 }
-.section__chat__text img {
+.recipe__chat__content img {
   width: 48px;
 }
-.section__chat__text__guide {
+.recipe__chat__content__text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  gap: 20px;
+}
+.recipe__chat__content__text__guide {
   background-color: #FFFFFF;
-  padding: 12px 48px;
+  padding: 0px 48px;
   border-radius: 48px 48px 48px 8px;
   font-size: 24px;
   font-weight: 500;
   color: #CC0829;
   width: 288px;
-  height: 72px;
+  height: auto;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-right: 581px;
 }
-.section__chat__button {
+.recipe__chat__content__text__user {
+  background-color: #FFFFFF;
+  padding: 12px 48px;
+  border-radius: 48px 48px 8px 48px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #37420D;
+  width: 384px;
+  height: 36px;
   display: flex;
-  align-items: flex-end;
-  width: 1056px;
-  justify-content: space-between;
-  margin: 621px 24px 48px 48px;
+  align-items: center;
+  margin-right: 24px;
+  margin-left: 480px;
 }
-.section__chat__button .back {
+.recipe__chat__content__text .hide {
+  display: none;
+}
+.recipe__chat__button {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.recipe__chat__button .back {
   padding: 12px 24px;
   justify-content: center;
   align-items: center;
@@ -306,7 +354,7 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
-.section__chat__button .go {
+.recipe__chat__button .go {
   padding: 12px 24px;
   justify-content: center;
   align-items: center;
@@ -317,45 +365,76 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
-.section__recipe {
-  margin: 48px 48px 0px 0px;
+.recipe__summary {
+  margin: 48px 48px 48px 0px;
   background-color: #FFFFFF;
-  padding-left: 24px;
-  padding-top: 24px;
+  padding: 24px;
   border-radius: 48px;
   width: 336px;
-  height: 784px;
+  height: 736px;
   font-size: 16px;
   font-weight: 300;
-  gap: 12px;
+  color: #333333;
+  overflow: scroll;
+  scrollbar-width: none;
 }
-.section__recipe h5 {
+.recipe__summary p {
+  margin: 0px;
+}
+.recipe__summary .titre {
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 12px;
 }
-.section__recipe .time {
+.recipe__summary .time {
   display: flex;
   gap: 8px;
-  height: 24px;
   align-items: center;
   margin-bottom: 24px;
 }
-.section__recipe__step {
+.recipe__summary__step {
   display: flex;
-  height: 148px;
-  margin-bottom: 12px;
+  gap: 16px;
+  margin-bottom: 16px;
 }
-.section__recipe__step__text {
+.recipe__summary__step img {
+  width: 148px;
+  height: 148px;
+}
+.recipe__summary__step__text {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   margin-left: 12px;
-  gap: 0px;
+  align-items: flex-start;
+  text-align: left;
+}
+@media screen and (max-width: 960px) {
+  .recipe .recipe__chat__content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .recipe .recipe__chat__button {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .recipe .recipe__chat {
+    padding: 0 12px;
+  }
+  .recipe .recipe__chat__content {
+    width: 100%;
+  }
 }
 
 /*** FOOTER ***/
 .footerSocial {
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
+  display: flex;
   background-color: #FFEDE5;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -366,6 +445,7 @@ body {
   color: #CC0829;
   text-align: left;
   margin: 0px 48px;
+  width: 1416px;
 }
 .footerSocial__content__cards {
   margin-top: 48px;
@@ -380,14 +460,17 @@ body {
   font-weight: 500;
   color: #CC0829;
   text-align: center;
-  margin-left: 110px;
   display: flex;
-  align-items: end;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CC0829;
+  border-radius: 24px;
+  width: 336px;
+  height: 336px;
 }
 
 .footer {
   margin: 0 auto;
-  justify-content: center;
   background-color: #CC0829;
   padding-bottom: 48px;
   padding-top: 100px;
@@ -400,6 +483,9 @@ body {
   margin-left: 168px;
   margin-right: 132px;
   display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1212px;
 }
 .footer__content__left {
   gap: 24px;
