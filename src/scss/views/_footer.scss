@@ -40,6 +40,52 @@
             }
         }
     }
+
+    @media screen and (max-width: 960px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__content {
+            font-size: 36px;
+            margin: 0px 48px;
+            width: 100%;
+
+            &__cards {
+                margin-top: 48px;
+                display: flex;
+                gap: 24px;
+
+                img, a {
+                    width: 167px;
+                    height: auto;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        &__content {
+            font-size: 28px;
+            margin: 0px 48px;
+            text-align: center;
+
+            &__cards {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+
+                img, a {
+                    width: 294px;
+                    height: 294px;
+                }
+            }
+        }
+    }
 }
 
 .footer{
@@ -115,6 +161,82 @@
 
         img{
             width: 60px;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        padding-top: 100px;
+        padding-bottom: 48px;
+        margin: 0 auto;
+
+        &__content {
+            font-size: 20px;
+            margin-left: 48px;
+            margin-right: 48px;
+            width: 738px;
+            gap: 66px;
+            text-align:left;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            
+            &__left, &__center, &__right {
+                align-items: center;
+                margin-left: 0;
+                margin-right: 0;
+                gap: 24px;
+
+                a{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            &__left .social {
+                justify-content: center;
+            }
+        }
+
+        &__copyright {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        margin: 0 auto;
+        padding: 100px 48px 48px 48px;
+
+
+        &__content {
+            font-size: 20px;
+            gap: 48px;
+            margin: 0px 48px;
+            display: flex;
+            flex-direction: column;
+            
+            &__left, &__center, &__right {
+                gap: 16px;
+                text-align: center;
+                width: 296px;
+                
+                a{
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__copyright {
+            font-size: 14px;
+            margin-top: 20px;
+
+            img {
+                width: 40px;
+            }
         }
     }
 }

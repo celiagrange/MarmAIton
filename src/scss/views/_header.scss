@@ -34,6 +34,12 @@
             margin-right: 24px;
         }
 
+        .menuBurger {
+            display: none;
+            width: 32px;
+            cursor: pointer;
+        }
+
         .buttonHeader{
             margin-left: 24px;
             display: flex;
@@ -46,6 +52,80 @@
             color: $mainColor;
             font-size: 20px;
             font-weight: 500;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        &__content {
+            margin: 0 24px;
+
+            &__menu {
+                justify-content: space-around;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                font-size: 18px;
+                gap: 16px;
+            }
+
+            .iconSearch {
+                width: 24px;
+                margin-right: 16px;
+            }
+
+            .menuBurger {
+                display: none;
+                width: 32px;
+                cursor: pointer;
+            }
+
+            .buttonHeader {
+                margin-left: 0;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        &__content {
+            margin: -24px 48px 24px 48px;
+            height: 124px;
+            width: 294px;
+
+            &__menu {
+                display: none;
+                gap: 16px;
+                font-size: 18px;
+                width: 100%;
+            }
+
+            .iconSearch {
+                width: 24px;
+                margin-right: 12px;
+                margin-left: 222px;
+            }
+
+            .menuBurger {
+                display: block;
+            }
+
+            .iconSearch .menuBurger{
+                gap: 24px;
+                width: 72px;
+            }
+
+            .buttonHeader {
+                margin-left: -237px;
+                margin-right: 217px;
+                margin-top: 114px;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 8px 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

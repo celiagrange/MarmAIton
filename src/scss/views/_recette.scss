@@ -157,27 +157,137 @@
     }
 
     @media screen and (max-width: 960px) {
-        .recipe__chat {
+        flex-direction: column;
+        align-items: center;
+        padding: 48px;
+
+        &__chat {
+            width: 100%;
+            padding: 0 24px;
+            height: auto;
+
             &__content {
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
+                margin-left: 0;
+                margin-top: 24px;
+                width: 100%;
+
+                &__text {
+                    margin: 0;
+                    gap: 10px;
+
+                    &__guide, &__user {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+                }
             }
 
             &__button {
+                
+                gap: 16px;
+                margin-top: 796px;
+
+                .back, .go {
+                    width: auto;
+                }
+            }
+        }
+
+        &__summary {
+            margin: 48px 48px 0px 48px;
+            width: 100%;
+            height: auto;
+            padding: 24px;
+            font-size: 14px;
+            flex-direction: column;  
+            justify-content: center;
+
+            .titre {
+                font-size: 20px;
+            }
+
+            .time {
+                margin-bottom: 16px;
+            }
+
+            &__step {
+                gap: 24px;
                 flex-direction: column;
-                gap: 12px;
-                align-items: center;
+
+                img {
+                    width: 148px;
+                    height: 148px;
+                }
+
+                &__text {
+                    margin-left: 0;
+                    flex-direction: column;
+                }
+
+                
             }
         }
     }
 
     @media screen and (max-width: 640px) {
-        .recipe__chat {
-            padding: 0 12px;
-            
+        padding: 48px;
+
+        &__chat {
+            padding: 0 24px;
+
             &__content {
-                width: 100%;
+                margin-top: 24px;
+
+                &__text {
+                    font-size: 20px;
+
+                    &__guide, &__user {
+                        font-size: 18px;
+                        padding: 8px 24px;
+                    }
+                }
+            }
+
+            &__button {
+                margin-top: 369px;
+
+                .back, .go {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__summary {
+            margin: 48px 48px 0px 48px;
+            padding: 24px;
+            font-size: 12px;
+            width: 100%;
+            height: auto;
+            flex-direction: column;  
+            justify-content: center;
+
+            .titre {
+                font-size: 18px;
+            }
+
+            .time {
+                margin-bottom: 12px;
+            }
+
+            &__step {
+                gap: 24px;
+                flex-direction: column;
+
+                img {
+                    width: 135px;
+                    height: 135px;
+                }
+
+                &__text {
+                    font-size: 12px;
+                    flex-direction: column;
+                }
             }
         }
     }
