@@ -27,6 +27,12 @@
             gap: 24px;
             font-size: 20px;
             font-weight: 500;
+            
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 24px;
+            }
         }
 
         .iconSearch{
